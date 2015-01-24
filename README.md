@@ -1,22 +1,11 @@
-# Seti UI
+#Kuali Dark UI
 
-A dark colored UI theme for Atom with custom file icons. [Seti Syntax](https://atom.io/themes/seti-syntax) also available.
+A deliciously dark UI theme forked from Seti UI.
+Made at Kuali Co.
 
-![Screenshot](https://github.com/jesseweed/seti-ui/raw/master/screenshot.png)
+Designed to work well with [Kuali Dark Syntax](https://atom.io/themes/kuali-dark-syntax)
 
-
-### Custom App Icons
-[ ![Screenshot](https://github.com/jesseweed/seti-syntax/raw/master/_icons/circular/circular-128x128.png) ](https://github.com/jesseweed/seti-syntax/tree/master/_icons/circular)
-[ ![Screenshot](https://github.com/jesseweed/seti-syntax/raw/master/_icons/rounded/rounded-128x128.png) ](https://github.com/jesseweed/seti-syntax/tree/master/_icons/rounded/)
-[ ![Screenshot](https://github.com/jesseweed/seti-syntax/raw/master/_icons/squared/squared-128x128.png) ](https://github.com/jesseweed/seti-syntax/tree/master/_icons/squared/)
-
-### Installation
-
-```
-cd ~/.atom/packages
-git clone https://github.com/jesseweed/seti-ui --depth=1
-```
-
+![Screenshot](https://dl.dropboxusercontent.com/u/9297096/kuali-dark-ui.png)
 
 ### Currently Supported File Icons
 * Bower

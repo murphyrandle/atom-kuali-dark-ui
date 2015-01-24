@@ -1,5 +1,5 @@
 // Sizes
-@font-size: 11px;
+@font-size: 12px;
 @disclosure-arrow-size: 12px;
 @component-padding: 10px;
 @component-icon-padding: 5px;
@@ -9,13 +9,14 @@
 
 
 // Base Colors
-@blue: rgb(79,153,211);
-@green: rgb(159,202,86);
-@yellow: rgb(220,205,105);
-@red: rgb(206,64,69);
-@purple: rgb(160,116,196);
-@background: rgb(21,23,24);
-@text: #aaa;
+@blue: #3498db;
+@green: #2ecc71;
+@yellow: #f39c12;
+@red: #e74c3c;
+@purple: #9b59b6;
+@syntax-background: lighten(#101112, 2%);
+@background: @syntax-background;
+@text: #ecf0f1;
 
 @ui-site-color-1: @blue;
 @ui-site-color-2: @green;
@@ -42,7 +43,7 @@
 // FONT COLORS
 @text-color: #aaa;
 @text-color-subtle: #555;
-@text-color-highlight: #fff;
+@text-color-highlight: @green;
 @text-color-selected: @text-color-highlight;
 @text-color-ignored: @text-color-subtle;
 @text-color-added: @text-color-success;
@@ -65,7 +66,7 @@
 
 
 // TREE VIEW / SIDEBAR
-@tree-view-background-color: rgb(16,17,18);
+@tree-view-background-color: darken(@syntax-background, 2.5%);
 @tree-view-border-color: @tool-panel-border-color;
 
 @scrollbar-background-color: rgba(42, 42, 42, 0.5);
@@ -87,21 +88,19 @@
 
 // PANELS
 @panel-bg: rgb(16,17,18);
-@panel-border: #000;
 
 // TABS
-@tab-height: 40px;
+@tab-height: 30px;
 @tab-border: none;
-@tab-height: 40px;
 @tab-top-padding: 0px;
 @tab-bottom-border-height: 0px;
 @tab-highlight-color: @blue;
-@tab-background: #333;
-@tab-background-color: #333;
+@tab-background: @syntax-background;
+@tab-background-color: @syntax-background;
 @tab-background-active: @background;
 @tab-background-color-active: #222;
 @tab-border-color: #484848;
-@tab-bar-background-color: #222;
+@tab-bar-background-color: @syntax-background;
 @tab-bar-bottom-border-color: rgb(218,216,219);
 @tab-text-color: @text-color;
 @tab-text-highlight-color: @blue;
@@ -110,10 +109,10 @@
 
 // MISC
 @base-background-color: lighten(@tool-panel-background-color, 5%);
-@base-border-color: rgba(0, 0, 0, 0.5);
+@base-border-color: darken(@syntax-background, 3%);
 
 @pane-item-background-color: @base-background-color;
-@pane-item-border-color: rgba(0, 0, 0, 0.5);
+@pane-item-border-color: @base-border-color;
 
 @input-background-color: rgba(255,255,255,0.25);
 @input-background-color-selected: rgba(255,255,255,0.1);
@@ -124,8 +123,8 @@
 @tool-panel-background-color: #1d1f21;
 @tool-panel-border-color: @base-border-color;
 
-@inset-panel-background-color: #161719;
-@inset-panel-border-color: @base-border-color;
+@inset-panel-background-color: @syntax-background;
+@inset-panel-border-color: @syntax-background;
 
 @panel-heading-background-color: #43484d;
 @panel-heading-border-color: fadein(@base-border-color, 10%);
@@ -133,4 +132,4 @@
 @overlay-background-color: #202123;
 @overlay-border-color: @background-color-highlight;
 
-@font-family: 'Lucida Grande', 'Segoe UI', 'Open Sans', sans-serif;
+@font-family: 'Input', 'Segoe UI', 'Open Sans', sans-serif;

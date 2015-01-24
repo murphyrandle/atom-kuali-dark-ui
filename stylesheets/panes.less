@@ -29,16 +29,5 @@ atom-pane-container {
 
 // Inactive Pane
 atom-pane:not(.active) {
-  opacity: 0.8;
-
-  atom-text-editor {
-    background-color: lighten(@app-background-color, 2%);
-  }
-
-  .tab.active {
-    border-bottom: solid 4px darken(@tab-highlight-color, 20%);
-    &:before {
-      border-bottom: solid 4px darken(@tab-highlight-color, 20%);
-    }
-  }
+  opacity: 0.5;
 }
